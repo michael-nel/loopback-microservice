@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ed5af0b9-5c4a-457e-b1fe-7e2453decf4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/acceptance/test-helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/acceptance/test-helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ping.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ping.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datasources/esv7.datasource.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasources/esv7.datasource.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/category.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/category.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sequence.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sequence.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +39,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,17 +88,44 @@
       <workItem from="1606439358200" duration="458000" />
       <workItem from="1606819933762" duration="3732000" />
       <workItem from="1606858963749" duration="1095000" />
-      <workItem from="1606860083482" duration="364000" />
+      <workItem from="1606860083482" duration="687000" />
+      <workItem from="1606866243133" duration="3309000" />
+      <workItem from="1607117679731" duration="7636000" />
+      <workItem from="1607169615931" duration="13217000" />
+      <workItem from="1607199412910" duration="2142000" />
+      <workItem from="1607214411874" duration="6342000" />
+      <workItem from="1607221211391" duration="73000" />
+      <workItem from="1607221389615" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="828" y="411" key="#ESLint" timestamp="1606820758424">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="411" key="#ESLint/-1920.5.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1606820758424" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1607118098219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.5.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607118098219" />
+    <state x="592" y="269" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607221276411">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="592" y="269" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.5.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1607221276411" />
   </component>
 </project>

@@ -75,14 +75,14 @@ export class PingController {
     await this.categoryRepo.create({
       id: _id,
       name: 'minha primeira categoria',
-      description: 'minha descrição'
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
     });
-
     return this.categoryRepo.find()
   }
 }
 
-const metada = MetadataInspector.getClassMetadata<MyClassMetaData>(
-  'meta-data-my-class-decorator',
-  PingController
-)
+// const metada = MetadataInspector.getClassMetadata<MyClassMetaData>(
+//   'meta-data-my-class-decorator',
+//   PingController
+// )
