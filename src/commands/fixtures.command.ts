@@ -2,7 +2,6 @@ import { default as chalk} from 'chalk'
 import {MicroCatalogApplication} from "../application";
 import * as config from '../config';
 import {Esv7DataSource} from "../datasources";
-import {Client} from 'es7';
 import fixtures from '../fixtures'
 import {DefaultCrudRepository} from "@loopback/repository";
 
