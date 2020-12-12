@@ -14,7 +14,7 @@ async function exportOpenApiSpec(): Promise<void> {
   const outFile = process.argv[2] ?? '';
   const app = new MicroCatalogApplication(config);
   await app.boot();
-  await app.exportOpenApiSpec(outFile);
+  await app.start();
 }
 
 exportOpenApiSpec().catch(err => {

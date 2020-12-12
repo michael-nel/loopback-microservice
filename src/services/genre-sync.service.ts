@@ -1,14 +1,17 @@
-import {bind, BindingScope} from '@loopback/core';
+import {bind, BindingScope, service} from '@loopback/core';
 import {rabbitmqSubscribe} from '../decorators/rabbitmq-subscribe.decorator';
 import {repository} from "@loopback/repository";
-import {GenreRepository} from "../repositories";
+import {GenreRepository, CategoryRepository} from "../repositories";
 import {Message} from 'amqplib';
 import {BaseModelSyncService} from "./base-model-sync.service";
+import {ValidatorService} from "./validator.service";
 
 @bind({scope: BindingScope.SINGLETON})
 export class GenreSyncService  extends BaseModelSyncService {
-  constructor(@repository(GenreRepository) private repo: GenreRepository,) {
-    super()
+  constructor(@repository(GenreRepository) private repo: GenreRepository,
+              @repository(CategoryRepository) private categoryRepo: CategoryRepository,
+              @service(ValidatorService) private validator: ValidatorService,) {
+    super(validator)
   }
 
   @rabbitmqSubscribe({
@@ -23,4 +26,22 @@ export class GenreSyncService  extends BaseModelSyncService {
       message
     })
   }
+
+  @rabbitmqSubscribe({
+    exchange: 'amq.topic',
+    queue: 'micro-catalog/sync-videos/genre_categories',
+    routingKey: 'model.genre_categories.*',
+  })
+  async handlerCategories({data, message}: {data: any, message: Message }){
+    await this.syncRelation({
+      id: data.id,
+      relation: 'categories',
+      relationIds: data.relatios_ids,
+      repo: this.repo,
+      repoRelation: this.categoryRepo,
+      message
+    })
+  }
+
+
 }
